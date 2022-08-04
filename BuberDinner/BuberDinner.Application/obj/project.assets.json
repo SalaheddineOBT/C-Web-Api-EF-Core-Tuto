@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\omar2\\Desktop\\tutorials\\BuberDinner\\BuberDinner.Application\\BuberDinner.Application.csproj",
+      "projectUniqueName": "C:\\Users\\omar2\\Desktop\\tutorials\\C-Web-Api-EF-Core-Tuto\\BuberDinner\\BuberDinner.Application\\BuberDinner.Application.csproj",
       "projectName": "BuberDinner.Application",
-      "projectPath": "C:\\Users\\omar2\\Desktop\\tutorials\\BuberDinner\\BuberDinner.Application\\BuberDinner.Application.csproj",
+      "projectPath": "C:\\Users\\omar2\\Desktop\\tutorials\\C-Web-Api-EF-Core-Tuto\\BuberDinner\\BuberDinner.Application\\BuberDinner.Application.csproj",
       "packagesPath": "C:\\Users\\omar2\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\omar2\\Desktop\\tutorials\\BuberDinner\\BuberDinner.Application\\obj\\",
+      "outputPath": "C:\\Users\\omar2\\Desktop\\tutorials\\C-Web-Api-EF-Core-Tuto\\BuberDinner\\BuberDinner.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -58,8 +58,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\omar2\\Desktop\\tutorials\\BuberDinner\\BuberDinner.Domain\\BuberDinner.Domain.csproj": {
-              "projectPath": "C:\\Users\\omar2\\Desktop\\tutorials\\BuberDinner\\BuberDinner.Domain\\BuberDinner.Domain.csproj"
+            "C:\\Users\\omar2\\Desktop\\tutorials\\C-Web-Api-EF-Core-Tuto\\BuberDinner\\BuberDinner.Domain\\BuberDinner.Domain.csproj": {
+              "projectPath": "C:\\Users\\omar2\\Desktop\\tutorials\\C-Web-Api-EF-Core-Tuto\\BuberDinner\\BuberDinner.Domain\\BuberDinner.Domain.csproj"
             }
           }
         }

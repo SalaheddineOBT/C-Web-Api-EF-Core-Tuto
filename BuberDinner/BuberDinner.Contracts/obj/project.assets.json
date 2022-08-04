@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\omar2\\Desktop\\tutorials\\BuberDinner\\BuberDinner.Contracts\\BuberDinner.Contracts.csproj",
+      "projectUniqueName": "C:\\Users\\omar2\\Desktop\\tutorials\\C-Web-Api-EF-Core-Tuto\\BuberDinner\\BuberDinner.Contracts\\BuberDinner.Contracts.csproj",
       "projectName": "BuberDinner.Contracts",
-      "projectPath": "C:\\Users\\omar2\\Desktop\\tutorials\\BuberDinner\\BuberDinner.Contracts\\BuberDinner.Contracts.csproj",
+      "projectPath": "C:\\Users\\omar2\\Desktop\\tutorials\\C-Web-Api-EF-Core-Tuto\\BuberDinner\\BuberDinner.Contracts\\BuberDinner.Contracts.csproj",
       "packagesPath": "C:\\Users\\omar2\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\omar2\\Desktop\\tutorials\\BuberDinner\\BuberDinner.Contracts\\obj\\",
+      "outputPath": "C:\\Users\\omar2\\Desktop\\tutorials\\C-Web-Api-EF-Core-Tuto\\BuberDinner\\BuberDinner.Contracts\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

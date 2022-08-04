@@ -10,3 +10,15 @@ C:\Users\omar2\Desktop\tutorials\BuberDinner\BuberDinner.Domain\obj\Debug\net6.0
 C:\Users\omar2\Desktop\tutorials\BuberDinner\BuberDinner.Domain\obj\Debug\net6.0\refint\BuberDinner.Domain.dll
 C:\Users\omar2\Desktop\tutorials\BuberDinner\BuberDinner.Domain\obj\Debug\net6.0\BuberDinner.Domain.pdb
 C:\Users\omar2\Desktop\tutorials\BuberDinner\BuberDinner.Domain\obj\Debug\net6.0\ref\BuberDinner.Domain.dll
+C:\Users\omar2\Desktop\tutorials\C-Web-Api-EF-Core-Tuto\BuberDinner\BuberDinner.Domain\bin\Debug\net6.0\BuberDinner.Domain.deps.json
+C:\Users\omar2\Desktop\tutorials\C-Web-Api-EF-Core-Tuto\BuberDinner\BuberDinner.Domain\bin\Debug\net6.0\BuberDinner.Domain.dll
+C:\Users\omar2\Desktop\tutorials\C-Web-Api-EF-Core-Tuto\BuberDinner\BuberDinner.Domain\bin\Debug\net6.0\BuberDinner.Domain.pdb
+C:\Users\omar2\Desktop\tutorials\C-Web-Api-EF-Core-Tuto\BuberDinner\BuberDinner.Domain\obj\Debug\net6.0\BuberDinner.Domain.csproj.AssemblyReference.cache
+C:\Users\omar2\Desktop\tutorials\C-Web-Api-EF-Core-Tuto\BuberDinner\BuberDinner.Domain\obj\Debug\net6.0\BuberDinner.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\omar2\Desktop\tutorials\C-Web-Api-EF-Core-Tuto\BuberDinner\BuberDinner.Domain\obj\Debug\net6.0\BuberDinner.Domain.AssemblyInfoInputs.cache
+C:\Users\omar2\Desktop\tutorials\C-Web-Api-EF-Core-Tuto\BuberDinner\BuberDinner.Domain\obj\Debug\net6.0\BuberDinner.Domain.AssemblyInfo.cs
+C:\Users\omar2\Desktop\tutorials\C-Web-Api-EF-Core-Tuto\BuberDinner\BuberDinner.Domain\obj\Debug\net6.0\BuberDinner.Domain.csproj.CoreCompileInputs.cache
+C:\Users\omar2\Desktop\tutorials\C-Web-Api-EF-Core-Tuto\BuberDinner\BuberDinner.Domain\obj\Debug\net6.0\BuberDinner.Domain.dll
+C:\Users\omar2\Desktop\tutorials\C-Web-Api-EF-Core-Tuto\BuberDinner\BuberDinner.Domain\obj\Debug\net6.0\refint\BuberDinner.Domain.dll
+C:\Users\omar2\Desktop\tutorials\C-Web-Api-EF-Core-Tuto\BuberDinner\BuberDinner.Domain\obj\Debug\net6.0\BuberDinner.Domain.pdb
+C:\Users\omar2\Desktop\tutorials\C-Web-Api-EF-Core-Tuto\BuberDinner\BuberDinner.Domain\obj\Debug\net6.0\ref\BuberDinner.Domain.dll
