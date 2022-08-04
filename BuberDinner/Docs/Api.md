@@ -35,7 +35,6 @@ POST {{host}}/auth/register
     "firstName": "Vegan",
     "lastName": "Sunshine",
     "email": "vegan.sunshine@domain.com",
-    "password": "example@2023",
     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
 }
 ```
@@ -59,6 +58,7 @@ POST {{host}}/auth/login
 ```
 ```json
 {
+    "id": "4406fa24-fd7c-4b2d-89cf-f55f870d8d3d",
     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
 }
 ```
