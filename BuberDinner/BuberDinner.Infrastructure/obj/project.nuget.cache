@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "UaISldxTFoR7brDcd6Fbok6D4586Fd4mNRVaUaNCMar7UuCzjefoRRx9rBVsmZDZc2rP6QqnkkmsICrwIxiWgQ==",
+  "dgSpecHash": "21r7odn4hJ3a77NXQMxzvxmnRQgUjerkfCdIUu757FNr/akQtDgJ8zCeRYgRKnxdLcAmMZSAIArjmzDW0NW/lw==",
   "success": true,
   "projectFilePath": "C:\\Users\\omar2\\Desktop\\tutorials\\C-Web-Api-EF-Core-Tuto\\BuberDinner\\BuberDinner.Infrastructure\\BuberDinner.Infrastructure.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\omar2\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
