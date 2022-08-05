@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using BuberDinner.Contracts.Authentication;
 using BuberDinner.Application.Services.Authentication;
-
+using BuberDinner.Api.Filters;
 namespace BuberDinner.Api.Controllers;
 
 [ApiController]

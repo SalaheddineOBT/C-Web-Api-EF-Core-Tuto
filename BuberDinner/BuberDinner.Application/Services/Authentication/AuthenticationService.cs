@@ -21,7 +21,7 @@ public class AuthenticationService : IAuthenticationService
         // 1. Check if user exists ?
 
         if(_userRepository.GetUserByEmail(email) is not User user){
-            throw new Exception("User with given email already exists !");
+            throw new Exception("No User with given email !");
         }
 
         // 2. Validate the password is correct ...
