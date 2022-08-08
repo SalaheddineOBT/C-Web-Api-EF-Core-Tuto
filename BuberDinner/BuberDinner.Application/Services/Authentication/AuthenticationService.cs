@@ -45,7 +45,8 @@ public class AuthenticationService : IAuthenticationService
         // 1. Check if user already exists ?
 
         if(_userRepository.GetUserByEmail(email) is not null){
-            throw new Exception("User with given email already exists !");
+            // throw new Exception("User with given email already exists !");
+            throw new DuplicateWaitObjectException();
         }
 
         // 2. Create user (generate unique ID) ,
