@@ -1,7 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using BuberDinner.Contracts.Authentication;
 using BuberDinner.Application.Services.Authentication;
+using BuberDinner.Application.Common.Errors;
 using BuberDinner.Api.Filters;
+using OneOf;
 namespace BuberDinner.Api.Controllers;
 
 [ApiController]
@@ -22,22 +24,37 @@ public class AuthenticationController : ControllerBase
     [ProducesResponseType(500)]
     public IActionResult Register(RegisterRequest request)
     {
-        var authResult = _authenticationService.Register(
+        OneOf<AuthenticationResult, DuplicateEmailException> registerResult = _authenticationService.Register(
             request.FirstName,
             request.LastName,
             request.Email,
             request.Password
         );
-        
-        var response = new AuthenticationResponse(
-            authResult.user.Id,
-            authResult.user.FirstName,
-            authResult.user.LastName,
-            authResult.user.Email,
-            authResult.Token
+
+        return registerResult.Match(
+                authResult => Ok(new AuthenticationResponse(
+                authResult.user.Id,
+                authResult.user.FirstName,
+                authResult.user.LastName,
+                authResult.user.Email,
+                authResult.Token
+            )),
+            _ => Problem(statusCode: StatusCodes.Status409Conflict,title: "Email already exists !")
         );
 
-        return Ok(response);
+        // if(registerResult.IsT0){
+        //     var authResult = registerResult.AsT0;
+        //     var response = new AuthenticationResponse(
+        //     authResult.user.Id,
+        //     authResult.user.FirstName,
+        //     authResult.user.LastName,
+        //     authResult.user.Email,
+        //     authResult.Token
+        // );
+        //     return Ok(response);
+        // }
+
+        // return Problem(statusCode: StatusCodes.Status409Conflict,detail: "Email already exists !");
     }
 
     [HttpPost("login")]
@@ -50,7 +67,7 @@ public class AuthenticationController : ControllerBase
             request.Email,
             request.Password
         );
-        
+
         var response = new AuthenticationResponse(
             authResult.user.Id,
             authResult.user.FirstName,
@@ -61,5 +78,5 @@ public class AuthenticationController : ControllerBase
 
         return Ok(response);
     }
-    
+
 }

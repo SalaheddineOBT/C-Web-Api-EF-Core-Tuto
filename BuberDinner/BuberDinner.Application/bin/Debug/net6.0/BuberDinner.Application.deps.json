@@ -9,7 +9,8 @@
       "BuberDinner.Application/1.0.0": {
         "dependencies": {
           "BuberDinner.Domain": "1.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "OneOf": "3.0.223"
         },
         "runtime": {
           "BuberDinner.Application.dll": {}
@@ -20,6 +21,14 @@
           "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.21.52210"
+          }
+        }
+      },
+      "OneOf/3.0.223": {
+        "runtime": {
+          "lib/netstandard2.0/OneOf.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -42,6 +51,13 @@
       "sha512": "sha512-xlzi2IYREJH3/m6+lUrQlujzX8wDitm4QGnUu6kUXTQAWPuZY8i+ticFJbzfqaetLA6KR/rO6Ew/HuYD+bxifg==",
       "path": "microsoft.extensions.dependencyinjection.abstractions/6.0.0",
       "hashPath": "microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+    },
+    "OneOf/3.0.223": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YWabiHBFfDdKIO7/TEa72mARVVo5u5FqFnfXuTqjIupMvJlhoH8d0m4uKtczaINuT0vGR1qlXJayeU6bTw5myg==",
+      "path": "oneof/3.0.223",
+      "hashPath": "oneof.3.0.223.nupkg.sha512"
     },
     "BuberDinner.Domain/1.0.0": {
       "type": "project",
