@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "ErrorOr/0.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/ErrorOr.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/ErrorOr.dll": {}
+        }
+      },
       "FluentResults/3.10.0": {
         "type": "package",
         "dependencies": {
@@ -253,6 +262,9 @@
       "BuberDinner.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "ErrorOr": "0.2.0"
+        },
         "compile": {
           "bin/placeholder/BuberDinner.Domain.dll": {}
         },
@@ -279,6 +291,20 @@
     }
   },
   "libraries": {
+    "ErrorOr/0.2.0": {
+      "sha512": "wTEdBKVSFX2Lm6SvARPrjM4d3ptzBuxmpDlWHV49N8ULzf+VDWGoGSTIxhh0bEc6EYcanb3iFI9CQTpMJ5qYSg==",
+      "type": "package",
+      "path": "erroror/0.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "erroror.0.2.0.nupkg.sha512",
+        "erroror.nuspec",
+        "icon-square.png",
+        "lib/net6.0/ErrorOr.dll",
+        "lib/net6.0/ErrorOr.xml"
+      ]
+    },
     "FluentResults/3.10.0": {
       "sha512": "SW76nSZ8OCbWFAiy+KPBP0o3Dxi9aKAk30RGLggdEZdy3KMFGpGOfukafK7UYevzX1XQE/ge+9t2JKitL0XtDw==",
       "type": "package",

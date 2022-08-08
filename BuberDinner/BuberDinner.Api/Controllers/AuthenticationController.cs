@@ -6,11 +6,11 @@ using System.Collections.Generic;
 using BuberDinner.Api.Filters;
 using FluentResults;
 using OneOf;
+using ErrorOr;
 namespace BuberDinner.Api.Controllers;
 
-[ApiController]
 [Route("auth")]
-public class AuthenticationController : ControllerBase
+public class AuthenticationController : ApiController
 {
     private readonly IAuthenticationService _authenticationService;
 
@@ -26,32 +26,44 @@ public class AuthenticationController : ControllerBase
     [ProducesResponseType(500)]
     public IActionResult Register(RegisterRequest request)
     {
-        Result<AuthenticationResult> registerResult = _authenticationService.Register(
+        ErrorOr<AuthenticationResult> registerResult = _authenticationService.Register(
             request.FirstName,
             request.LastName,
             request.Email,
             request.Password
         );
 
-        if(registerResult.IsSuccess){
-            return Ok(new AuthenticationResponse(
-                registerResult.Value.user.Id,
-                registerResult.Value.user.FirstName,
-                registerResult.Value.user.LastName,
-                registerResult.Value.user.Email,
-                registerResult.Value.Token
-            ));
-        }
+        return registerResult.Match(
+            authResult => Ok(new AuthenticationResponse(
+                authResult.user.Id,
+                authResult.user.FirstName,
+                authResult.user.LastName,
+                authResult.user.Email,
+                authResult.Token
+            )),
+            err => Problem(err)
 
-        var error = registerResult.Errors[0];
-        if(error is DuplicateEmailException){
-            return Problem(
-                statusCode: StatusCodes.Status409Conflict,
-                title: error.ToString()
-            );
-        }
+        );
 
-        return Problem();
+        // if(registerResult.IsSuccess){
+        //     return Ok(new AuthenticationResponse(
+        //         registerResult.Value.user.Id,
+        //         registerResult.Value.user.FirstName,
+        //         registerResult.Value.user.LastName,
+        //         registerResult.Value.user.Email,
+        //         registerResult.Value.Token
+        //     ));
+        // }
+
+        // var error = registerResult.Errors[0];
+        // if(error is DuplicateEmailException){
+        //     return Problem(
+        //         statusCode: StatusCodes.Status409Conflict,
+        //         title: error.ToString()
+        //     );
+        // }
+
+        // return Problem();
 
         // return registerResult.Match(
         //         authResult => Ok(new AuthenticationResponse(
@@ -85,20 +97,24 @@ public class AuthenticationController : ControllerBase
     [ProducesResponseType(500)]
     public IActionResult Login(LoginRequest request)
     {
-        var authResult = _authenticationService.Login(
+        var loginResult = _authenticationService.Login(
             request.Email,
             request.Password
         );
 
-        var response = new AuthenticationResponse(
-            authResult.user.Id,
-            authResult.user.FirstName,
-            authResult.user.LastName,
-            authResult.user.Email,
-            authResult.Token
+        return loginResult.Match(
+            authResult => Ok(new AuthenticationResponse(
+                authResult.user.Id,
+                authResult.user.FirstName,
+                authResult.user.LastName,
+                authResult.user.Email,
+                authResult.Token
+            )),
+            err => Problem(err)
+
         );
 
-        return Ok(response);
+        //return Ok(response);
     }
 
 }

@@ -11,9 +11,9 @@ namespace BuberDinner.Application.Common.Errors;
 
 // public record struct DuplicateEmailException();
 
-public class DuplicateEmailException: IError
+public class DuplicateEmailException//: IError
 {
-    public List<IError> Raisons => throw new NotImplementedException();
+    //public List<IError> Raisons => throw new NotImplementedException();
     // public string ErrorMessage => throw new NotImplementedException();
     // public Dictionary<string, object> Metadata => throw new NotImplementedException();
 }

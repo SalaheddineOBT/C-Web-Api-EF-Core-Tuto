@@ -7,8 +7,19 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "BuberDinner.Domain/1.0.0": {
+        "dependencies": {
+          "ErrorOr": "0.2.0"
+        },
         "runtime": {
           "BuberDinner.Domain.dll": {}
+        }
+      },
+      "ErrorOr/0.2.0": {
+        "runtime": {
+          "lib/net6.0/ErrorOr.dll": {
+            "assemblyVersion": "0.2.0.0",
+            "fileVersion": "0.2.0.0"
+          }
         }
       }
     }
@@ -18,6 +29,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "ErrorOr/0.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wTEdBKVSFX2Lm6SvARPrjM4d3ptzBuxmpDlWHV49N8ULzf+VDWGoGSTIxhh0bEc6EYcanb3iFI9CQTpMJ5qYSg==",
+      "path": "erroror/0.2.0",
+      "hashPath": "erroror.0.2.0.nupkg.sha512"
     }
   }
 }
