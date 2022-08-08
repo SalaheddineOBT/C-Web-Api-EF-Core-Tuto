@@ -2,7 +2,9 @@ using Microsoft.AspNetCore.Mvc;
 using BuberDinner.Contracts.Authentication;
 using BuberDinner.Application.Services.Authentication;
 using BuberDinner.Application.Common.Errors;
+using System.Collections.Generic;
 using BuberDinner.Api.Filters;
+using FluentResults;
 using OneOf;
 namespace BuberDinner.Api.Controllers;
 
@@ -24,23 +26,43 @@ public class AuthenticationController : ControllerBase
     [ProducesResponseType(500)]
     public IActionResult Register(RegisterRequest request)
     {
-        OneOf<AuthenticationResult, DuplicateEmailException> registerResult = _authenticationService.Register(
+        Result<AuthenticationResult> registerResult = _authenticationService.Register(
             request.FirstName,
             request.LastName,
             request.Email,
             request.Password
         );
 
-        return registerResult.Match(
-                authResult => Ok(new AuthenticationResponse(
-                authResult.user.Id,
-                authResult.user.FirstName,
-                authResult.user.LastName,
-                authResult.user.Email,
-                authResult.Token
-            )),
-            _ => Problem(statusCode: StatusCodes.Status409Conflict,title: "Email already exists !")
-        );
+        if(registerResult.IsSuccess){
+            return Ok(new AuthenticationResponse(
+                registerResult.Value.user.Id,
+                registerResult.Value.user.FirstName,
+                registerResult.Value.user.LastName,
+                registerResult.Value.user.Email,
+                registerResult.Value.Token
+            ));
+        }
+
+        var error = registerResult.Errors[0];
+        if(error is DuplicateEmailException){
+            return Problem(
+                statusCode: StatusCodes.Status409Conflict,
+                title: error.ToString()
+            );
+        }
+
+        return Problem();
+
+        // return registerResult.Match(
+        //         authResult => Ok(new AuthenticationResponse(
+        //         authResult.user.Id,
+        //         authResult.user.FirstName,
+        //         authResult.user.LastName,
+        //         authResult.user.Email,
+        //         authResult.Token
+        //     )),
+        //     error => Problem(statusCode: (int)error.StatusCode,title: error.ErrorMessage)
+        // );
 
         // if(registerResult.IsT0){
         //     var authResult = registerResult.AsT0;

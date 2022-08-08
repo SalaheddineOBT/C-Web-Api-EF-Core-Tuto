@@ -17,6 +17,17 @@
           "BuberDinner.Infrastructure.dll": {}
         }
       },
+      "FluentResults/3.10.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.1/FluentResults.dll": {
+            "assemblyVersion": "3.10.0.0",
+            "fileVersion": "3.10.0.0"
+          }
+        }
+      },
       "Microsoft.CSharp/4.5.0": {},
       "Microsoft.Extensions.Configuration/6.0.1": {
         "dependencies": {
@@ -57,6 +68,14 @@
           "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.21.52210"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/6.0.1": {
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.322.12309"
           }
         }
       },
@@ -167,6 +186,7 @@
         "dependencies": {
           "BuberDinner.Domain": "1.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "FluentResults": "3.10.0",
           "OneOf": "3.0.223"
         },
         "runtime": {
@@ -185,6 +205,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "FluentResults/3.10.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SW76nSZ8OCbWFAiy+KPBP0o3Dxi9aKAk30RGLggdEZdy3KMFGpGOfukafK7UYevzX1XQE/ge+9t2JKitL0XtDw==",
+      "path": "fluentresults/3.10.0",
+      "hashPath": "fluentresults.3.10.0.nupkg.sha512"
     },
     "Microsoft.CSharp/4.5.0": {
       "type": "package",
@@ -220,6 +247,13 @@
       "sha512": "sha512-xlzi2IYREJH3/m6+lUrQlujzX8wDitm4QGnUu6kUXTQAWPuZY8i+ticFJbzfqaetLA6KR/rO6Ew/HuYD+bxifg==",
       "path": "microsoft.extensions.dependencyinjection.abstractions/6.0.0",
       "hashPath": "microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Abstractions/6.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dzB2Cgg+JmrouhjkcQGzSFjjvpwlq353i8oBQO2GWNjCXSzhbtBRUf28HSauWe7eib3wYOdb3tItdjRwAdwCSg==",
+      "path": "microsoft.extensions.logging.abstractions/6.0.1",
+      "hashPath": "microsoft.extensions.logging.abstractions.6.0.1.nupkg.sha512"
     },
     "Microsoft.Extensions.Options/6.0.0": {
       "type": "package",
