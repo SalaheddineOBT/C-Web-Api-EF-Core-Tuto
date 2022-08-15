@@ -1,7 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using BuberDinner.Contracts.Authentication;
-using BuberDinner.Application.Services.Authentication;
+// using BuberDinner.Application.Services.Authentication;
 using BuberDinner.Application.Authentication.Commands.Register;
+using BuberDinner.Application.Authentication.Common;
 using BuberDinner.Application.Common.Errors;
 using System.Collections.Generic;
 using BuberDinner.Api.Filters;
@@ -14,14 +15,19 @@ namespace BuberDinner.Api.Controllers;
 [Route("auth")]
 public class AuthenticationController : ApiController
 {
-    private readonly IAuthenticationService _authenticationService;
-    private readonly IMediator _mediator;
+    // private readonly IAuthenticationService _authenticationService;
+    private readonly ISender _mediator;
 
+    // public AuthenticationController(
+    //     IAuthenticationService authenticationService,
+    //     ISender mediator
+    // ){
+    //     _authenticationService = authenticationService;
+    //     _mediator = mediator;
+    // }
     public AuthenticationController(
-        IAuthenticationService authenticationService,
-        IMediator mediator
+        ISender mediator
     ){
-        _authenticationService = authenticationService;
         _mediator = mediator;
     }
 
@@ -99,12 +105,18 @@ public class AuthenticationController : ApiController
     [ProducesResponseType(200)]
     [ProducesResponseType(400)]
     [ProducesResponseType(500)]
-    public IActionResult Login(LoginRequest request)
+    public async Task<IActionResult> Login(LoginRequest request)
     {
-        var loginResult = _authenticationService.Login(
+    //     var loginResult = _authenticationService.Login(
+    //         request.Email,
+    //         request.Password
+    //     );
+        var query = new LoginRequest(
             request.Email,
             request.Password
         );
+
+        ErrorOr<AuthenticationResult>  loginResult = (ErrorOr<AuthenticationResult>) await _mediator.Send(query);
 
         return loginResult.Match(
             authResult => Ok(new AuthenticationResponse(

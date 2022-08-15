@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "N1tQZHq1xWz2chpHZOfDKhohjlVBUFbsBTPBHQUwjTYOFBw5zsgkNfeVRmDZxz5+9QRtGwdOokcvR3TKzuWbag==",
+  "dgSpecHash": "YKtnPTIhSb2kf03feF8O7390Jo7n96tIhObJxC6AxBNPg8/qACgbkqEU29gCwN6aF53U9Tmhb0bvxLuB7VM1dQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\omar2\\Desktop\\tutorials\\C-Web-Api-EF-Core-Tuto\\BuberDinner\\BuberDinner.Infrastructure\\BuberDinner.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\omar2\\.nuget\\packages\\fluentresults\\3.10.0\\fluentresults.3.10.0.nupkg.sha512",
     "C:\\Users\\omar2\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
     "C:\\Users\\omar2\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\omar2\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\10.0.1\\mediatr.extensions.microsoft.dependencyinjection.10.0.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\omar2\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",
     "C:\\Users\\omar2\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",

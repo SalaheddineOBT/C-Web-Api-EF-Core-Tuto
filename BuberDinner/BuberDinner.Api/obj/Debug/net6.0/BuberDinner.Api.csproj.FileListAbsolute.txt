@@ -75,3 +75,4 @@ C:\Users\omar2\Desktop\tutorials\C-Web-Api-EF-Core-Tuto\BuberDinner\BuberDinner.
 C:\Users\omar2\Desktop\tutorials\C-Web-Api-EF-Core-Tuto\BuberDinner\BuberDinner.Api\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\omar2\Desktop\tutorials\C-Web-Api-EF-Core-Tuto\BuberDinner\BuberDinner.Api\bin\Debug\net6.0\MediatR.dll
 C:\Users\omar2\Desktop\tutorials\C-Web-Api-EF-Core-Tuto\BuberDinner\BuberDinner.Api\bin\Debug\net6.0\MediatR.Contracts.dll
+C:\Users\omar2\Desktop\tutorials\C-Web-Api-EF-Core-Tuto\BuberDinner\BuberDinner.Api\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
