@@ -1,37 +1,44 @@
 using Microsoft.AspNetCore.Mvc;
 using BuberDinner.Contracts.Authentication;
 using BuberDinner.Application.Services.Authentication;
+using BuberDinner.Application.Authentication.Commands.Register;
 using BuberDinner.Application.Common.Errors;
 using System.Collections.Generic;
 using BuberDinner.Api.Filters;
 using FluentResults;
 using OneOf;
 using ErrorOr;
+using MediatR;
 namespace BuberDinner.Api.Controllers;
 
 [Route("auth")]
 public class AuthenticationController : ApiController
 {
     private readonly IAuthenticationService _authenticationService;
+    private readonly IMediator _mediator;
 
     public AuthenticationController(
-        IAuthenticationService authenticationService
+        IAuthenticationService authenticationService,
+        IMediator mediator
     ){
         _authenticationService = authenticationService;
+        _mediator = mediator;
     }
 
     [HttpPost("register")]
     [ProducesResponseType(200)]
     [ProducesResponseType(400)]
     [ProducesResponseType(500)]
-    public IActionResult Register(RegisterRequest request)
+    public async Task<IActionResult> Register(RegisterRequest request)
     {
-        ErrorOr<AuthenticationResult> registerResult = _authenticationService.Register(
-            request.FirstName,
-            request.LastName,
-            request.Email,
-            request.Password
-        );
+        var commands = new RegisterCommand(request.FirstName,request.LastName,request.Email,request.Password);
+        ErrorOr<AuthenticationResult> registerResult = await _mediator.Send(commands);
+        // ErrorOr<AuthenticationResult> registerResult = _authenticationService.Register(
+        //     request.FirstName,
+        //     request.LastName,
+        //     request.Email,
+        //     request.Password
+        // );
 
         return registerResult.Match(
             authResult => Ok(new AuthenticationResponse(
@@ -42,7 +49,6 @@ public class AuthenticationController : ApiController
                 authResult.Token
             )),
             err => Problem(err)
-
         );
 
         // if(registerResult.IsSuccess){
@@ -62,7 +68,6 @@ public class AuthenticationController : ApiController
         //         title: error.ToString()
         //     );
         // }
-
         // return Problem();
 
         // return registerResult.Match(
@@ -87,7 +92,6 @@ public class AuthenticationController : ApiController
         // );
         //     return Ok(response);
         // }
-
         // return Problem(statusCode: StatusCodes.Status409Conflict,detail: "Email already exists !");
     }
 
@@ -111,9 +115,7 @@ public class AuthenticationController : ApiController
                 authResult.Token
             )),
             err => Problem(err)
-
         );
-
         //return Ok(response);
     }
 

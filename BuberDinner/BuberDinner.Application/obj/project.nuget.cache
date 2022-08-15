@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "iJxsMTWWu398xmR27tY6F3+eIWm8fbQar7gdJ32Nq2Ui0StfzYg9YK4cG5fS+0gioU7ilucdANk7I50H/jMo7g==",
+  "dgSpecHash": "gTjdk8mQWCA1L3asFoWdFDT4u+byLhp3QuQr4EPWed5RThjKJnWGkfqja5OrrsLa+gmeqUPIJkSqce52Rn5/aA==",
   "success": true,
   "projectFilePath": "C:\\Users\\omar2\\Desktop\\tutorials\\C-Web-Api-EF-Core-Tuto\\BuberDinner\\BuberDinner.Application\\BuberDinner.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\omar2\\.nuget\\packages\\erroror\\0.2.0\\erroror.0.2.0.nupkg.sha512",
     "C:\\Users\\omar2\\.nuget\\packages\\fluentresults\\3.10.0\\fluentresults.3.10.0.nupkg.sha512",
+    "C:\\Users\\omar2\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\omar2\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\omar2\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\omar2\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.1\\microsoft.extensions.logging.abstractions.6.0.1.nupkg.sha512",
     "C:\\Users\\omar2\\.nuget\\packages\\oneof\\3.0.223\\oneof.3.0.223.nupkg.sha512"
