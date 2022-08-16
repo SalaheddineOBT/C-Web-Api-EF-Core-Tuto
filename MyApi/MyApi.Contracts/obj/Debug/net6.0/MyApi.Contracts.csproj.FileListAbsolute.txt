@@ -1,0 +1,12 @@
+C:\Users\omar2\Desktop\tutorials\C-Web-Api-EF-Core-Tuto\MyApi\MyApi.Contracts\bin\Debug\net6.0\MyApi.Contracts.deps.json
+C:\Users\omar2\Desktop\tutorials\C-Web-Api-EF-Core-Tuto\MyApi\MyApi.Contracts\bin\Debug\net6.0\MyApi.Contracts.dll
+C:\Users\omar2\Desktop\tutorials\C-Web-Api-EF-Core-Tuto\MyApi\MyApi.Contracts\bin\Debug\net6.0\MyApi.Contracts.pdb
+C:\Users\omar2\Desktop\tutorials\C-Web-Api-EF-Core-Tuto\MyApi\MyApi.Contracts\obj\Debug\net6.0\MyApi.Contracts.csproj.AssemblyReference.cache
+C:\Users\omar2\Desktop\tutorials\C-Web-Api-EF-Core-Tuto\MyApi\MyApi.Contracts\obj\Debug\net6.0\MyApi.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\omar2\Desktop\tutorials\C-Web-Api-EF-Core-Tuto\MyApi\MyApi.Contracts\obj\Debug\net6.0\MyApi.Contracts.AssemblyInfoInputs.cache
+C:\Users\omar2\Desktop\tutorials\C-Web-Api-EF-Core-Tuto\MyApi\MyApi.Contracts\obj\Debug\net6.0\MyApi.Contracts.AssemblyInfo.cs
+C:\Users\omar2\Desktop\tutorials\C-Web-Api-EF-Core-Tuto\MyApi\MyApi.Contracts\obj\Debug\net6.0\MyApi.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\omar2\Desktop\tutorials\C-Web-Api-EF-Core-Tuto\MyApi\MyApi.Contracts\obj\Debug\net6.0\MyApi.Contracts.dll
+C:\Users\omar2\Desktop\tutorials\C-Web-Api-EF-Core-Tuto\MyApi\MyApi.Contracts\obj\Debug\net6.0\refint\MyApi.Contracts.dll
+C:\Users\omar2\Desktop\tutorials\C-Web-Api-EF-Core-Tuto\MyApi\MyApi.Contracts\obj\Debug\net6.0\MyApi.Contracts.pdb
+C:\Users\omar2\Desktop\tutorials\C-Web-Api-EF-Core-Tuto\MyApi\MyApi.Contracts\obj\Debug\net6.0\ref\MyApi.Contracts.dll
