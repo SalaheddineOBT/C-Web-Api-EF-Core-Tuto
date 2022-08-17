@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "QJv1ttaGxuM000Cp5ey3f99sQSOLX49kalbBSMCl8nbC2gEywmPyBgBYswoXv8mQZwExIiJAX1xQE+s1+AFTlw==",
+  "dgSpecHash": "CdO3XnpDsig7DGiSyPIE9Bp3WsRLYNtHc1dINYEhXzCJ0c74ngrcQRt7iMZgUs4ZAQ5m1XvQkewueRRpPgCFeQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\omar2\\Desktop\\tutorials\\C-Web-Api-EF-Core-Tuto\\BuberDinner\\BuberDinner.Domain\\BuberDinner.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\omar2\\.nuget\\packages\\erroror\\0.2.0\\erroror.0.2.0.nupkg.sha512"
+  ],
   "logs": []
 }
